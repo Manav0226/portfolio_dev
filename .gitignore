@@ -1,0 +1,31 @@
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.wrangler
+node_modules
+dist
+.DS_Store
+
+# Claude session data & local dev tools
+.claude/
+.superpowers/
+
+# Internal planning docs
+docs/
+PRODUCT.md
+
+# Raw/backup files — not needed on live site
+image.png
+image copy.png
+index.pre-intro-video-backup.html
+
+# QA artifacts
+.qa-home-dom.html
+.qa-server-err.log
+.qa-server-out.log
+
+# Resume source (PDF is sufficient)
+manav-mehta-resume.docx

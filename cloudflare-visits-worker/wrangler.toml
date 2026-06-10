@@ -1,0 +1,13 @@
+name = "manav-portfolio-visits"
+main = "src/index.js"
+compatibility_date = "2026-05-19"
+
+[observability]
+enabled = true
+
+[vars]
+# Replace after deployment with your live site origin.
+ALLOWED_ORIGIN = "https://manav-mehta.vercel.app"
+
+# Add this KV binding in Cloudflare:
+# VISITS -> portfolio-visits-kv
