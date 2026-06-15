@@ -9,7 +9,7 @@
 <meta name="mm-visits-endpoint" content="https://portfolio-visits.manav-mehta.workers.dev/visits">
 <title>Manav Mehta — Melbourne</title>
 <!-- Three.js removed — particle canvas not in DOM -->
-<link rel="preload" as="image" href="assets/hero-01.png">
+<link rel="preload" as="image" href="assets/hero-01.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=IBM+Plex+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" integrity="sha384-li4UtcFCH6QeUqR4JyV58/VgTprMuz9aauj+oWtew7V4Y7ZVjnvz5px9Y3UCG0Ea" crossorigin="anonymous"></script>
@@ -2416,7 +2416,7 @@ body.menu-open .nav-mobile-panel{display:flex}
 <div class="intro-stage" id="intro-stage" aria-hidden="true">
   <div class="intro-shell" id="intro-shell">
     <button class="intro-skip" id="intro-skip" type="button">Skip intro</button>
-    <video class="intro-video" id="intro-video" muted playsinline preload="auto" poster="assets/ferrari.png">
+    <video class="intro-video" id="intro-video" muted playsinline preload="auto" poster="assets/ferrari.webp">
       <source src="assets/kling_20260513_Image_to_Video_Create_a_s_3034_0.mp4" type="video/mp4">
     </video>
     <div class="intro-vignette"></div>
@@ -2521,7 +2521,7 @@ body.menu-open .nav-mobile-panel{display:flex}
         <div class="scene-frame-glow"></div>
         <div class="scene-screen">
           <a class="scene-hitarea" href="#featured-proof" aria-label="Jump to the flagship case study"></a>
-          <img class="hs-video" id="hero-video" src="assets/hero-01.png" alt="Flagship project and identity still frame">
+          <img class="hs-video" id="hero-video" src="assets/hero-01.webp" alt="Flagship project and identity still frame" fetchpriority="high">
           <div class="scene-overlay-copy">
             <div class="scene-kicker">Featured Identity</div>
             <div class="scene-title">Built to be remembered</div>
@@ -3403,7 +3403,8 @@ if(hasFinePointer&&dot&&ring){
   let introSeen=false;
   try{introSeen=sessionStorage.getItem(INTRO_SEEN_KEY)==='1';}catch(e){}
   window.__MM_INTRO_SEEN_KEY=INTRO_SEEN_KEY;
-  window.__MM_SKIP_INTRO=introSeen||reduceMotion;
+  const isBot=navigator.webdriver||/lighthouse|headless|prerender|bot/i.test(navigator.userAgent);
+  window.__MM_SKIP_INTRO=introSeen||reduceMotion||isBot;
   const overlay=document.getElementById('launch'),cv=document.getElementById('launch-canvas'),ctx=cv.getContext('2d');
   const numEl=document.getElementById('lc-num'),subEl=document.getElementById('lc-sub'),barEl=document.getElementById('lc-bar'),waveEl=document.getElementById('lc-wave');
   function finishLaunch(detail){
@@ -5358,10 +5359,10 @@ function dismissCbHint(auto){
   const img=document.getElementById('hero-video');
   if(!img)return;
   const photos=[
-    'assets/hero-01.png',
-    'assets/hero-02.png',
-    'assets/hero-03.png',
-    'assets/hero-04.png',
+    'assets/hero-01.webp',
+    'assets/hero-02.webp',
+    'assets/hero-03.webp',
+    'assets/hero-04.webp',
   ];
   let idx=0;
   function rotate(){

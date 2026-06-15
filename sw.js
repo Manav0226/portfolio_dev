@@ -1,4 +1,4 @@
-const CACHE = 'manav-portfolio-v1';
+const CACHE = 'manav-portfolio-v2';
 
 const PRECACHE = [
   '/',
@@ -13,12 +13,12 @@ const PRECACHE = [
   '/android-chrome-192x192.png',
   '/android-chrome-512x512.png',
   '/site.webmanifest',
-  '/assets/ferrari.png',
+  '/assets/ferrari.webp',
   '/assets/ferrari-divider-car-cutout.png',
-  '/assets/hero-01.png',
-  '/assets/hero-02.png',
-  '/assets/hero-03.png',
-  '/assets/hero-04.png',
+  '/assets/hero-01.webp',
+  '/assets/hero-02.webp',
+  '/assets/hero-03.webp',
+  '/assets/hero-04.webp',
 ];
 
 // Install — precache local assets
