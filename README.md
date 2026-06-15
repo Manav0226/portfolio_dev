@@ -4,9 +4,9 @@
 
 **Graduate Software Developer · Melbourne, Australia**
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-Visit%20Portfolio-C03A18?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-dev-phi-tawny.vercel.app)
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit%20Portfolio-C03A18?style=for-the-badge&logo=vercel&logoColor=white)](https://manav-mehta.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/manav-mehta-dev)
-[![Resume](https://img.shields.io/badge/Resume-Download%20PDF-1a1a2e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://portfolio-dev-phi-tawny.vercel.app/manav-mehta-resume.pdf)
+[![Resume](https://img.shields.io/badge/Resume-Download%20PDF-1a1a2e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://manav-mehta.vercel.app/manav-mehta-resume.pdf)
 
 </div>
 
@@ -115,7 +115,7 @@ I work part-time at Coles while finishing study. That means I'm disciplined, I m
 ## Contact
 
 **Email:** manavaus0226@gmail.com  
-**Portfolio:** [portfolio-dev-phi-tawny.vercel.app](https://portfolio-dev-phi-tawny.vercel.app)
+**Portfolio:** [manav-mehta.vercel.app](https://manav-mehta.vercel.app)
 
 Open to graduate roles, internships, and conversations about interesting problems.
 
