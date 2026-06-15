@@ -1,89 +1,128 @@
+<div align="center">
+
 # Manav Mehta — Portfolio
 
-## Files in this folder
+**Graduate Software Developer · Melbourne, Australia**
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Main portfolio website |
-| `favicon.svg` | Browser tab icon |
-| `og-preview.svg` | Replace with a real PNG screenshot (1200×630px) |
-| `manav-mehta-resume.docx` | Resume — open in Word, Save As PDF for distribution |
-| `vercel.json` | Security headers for Vercel deployment |
-| `.htaccess` | Security headers for Apache hosting |
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit%20Portfolio-C03A18?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-dev-phi-tawny.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/manav-mehta-dev)
+[![Resume](https://img.shields.io/badge/Resume-Download%20PDF-1a1a2e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://portfolio-dev-phi-tawny.vercel.app/manav-mehta-resume.pdf)
+
+</div>
 
 ---
 
-## Before going live — 5 things to do
+## What This Is
 
-### 1. Replace YOUR_DOMAIN in index.html
-Search for `YOUR_DOMAIN.com` in index.html — replace all 4 occurrences
-with your real domain (e.g. `manav-mehta.vercel.app` or `manavmehta.dev`).
+A single-page portfolio built to be **used**, not just looked at. Designed for recruiters and hiring managers who want to know if I can actually build production-quality software — not just list technologies.
 
-### 2. Remove noindex (line 10 of index.html)
-Delete this line when you are ready for Google to index you:
+Every section answers a specific recruiter question. Every project is a real system that solves a real problem.
+
+---
+
+## Sections
+
+| # | Section | What It Shows |
+|---|---------|---------------|
+| 01 | **Identity** | Who I am and why I build |
+| 02 | **About** | Background, interests, and what drives my work |
+| 03 | **Strengths** | What I bring to a team, backed by examples |
+| 04 | **Capabilities** | Full technical skill stack, tiered by confidence |
+| 05 | **Projects** | 4 real systems — architecture, tech choices, outcomes |
+| 06 | **Journey** | Education and experience timeline |
+| 07 | **Contact** | Direct outreach, open to roles immediately |
+
+---
+
+## Featured Projects
+
+### 6-Agent — AI Orchestration System
+> Full-stack AI agent platform. Routes tasks across Claude, GPT-4, Gemini, and Gemini Flash with security boundaries, memory, and UX that a non-technical user can actually navigate.
+
+**Stack:** Python · LangGraph · Claude API · React · PostgreSQL
+
+---
+
+### FRIDAY — Developer Tooling Agent
+> Named after Iron Man's AI — an agent that handles code review, deployment checks, and developer workflows. Built around the idea that good tooling should think, not just respond.
+
+**Stack:** Claude API · Python · MCP · REST APIs
+
+---
+
+### NSE F&O Algorithmic Trading Bot
+> Signal detection, order execution, and risk management for NSE derivatives. Built for actual trading conditions: latency matters, accuracy matters, reliability matters.
+
+**Stack:** Python · Zerodha Kite API · NSE F&O · Algo systems
+
+---
+
+### Blockchain DApp — On-chain CRUD
+> Full-stack Ethereum DApp where all task logic lives on-chain. Demonstrates wallet auth, smart contract design, and React integration — fully decoupled layers.
+
+**Stack:** Solidity · React.js · MetaMask · Truffle · Ethereum
+
+---
+
+## Tech Stack
+
 ```
-<meta name="robots" content="noindex, nofollow">
-```
-
-### 3. Add Cloudflare Analytics token
-- Sign up free at cloudflare.com
-- Web Analytics → Add Site → copy your token
-- In index.html, find `YOUR_CF_TOKEN` and replace it
-- Uncomment the Cloudflare script tag (remove the `<!--` and `-->`)
-
-### 4. Connect contact form (Formspree)
-- Sign up free at formspree.io (50 submissions/month free)
-- New form → copy the ID
-- In index.html, find `YOUR_FORMSPREE_ID` and replace it
-
-### 5. Replace og-preview.svg with a real PNG
-- Open your portfolio in Chrome, go fullscreen
-- Screenshot the hero section
-- Crop to 1200×630px in any image editor
-- Save as `og-preview.png` (replace the .svg)
-- Update the 3 og:image meta tags in index.html to point to `.png`
-
-### 6. Create a proper favicon (optional upgrade)
-- Go to favicon.io → Text tab
-- Letter: M, Font: Arial Bold, Background: #C03A18, Text colour: #FFFFFF
-- Download → replace favicon.svg and add favicon.ico
-
----
-
-## Deploy to Vercel (recommended)
-
-```bash
-# Option A — drag and drop
-# Go to vercel.com → New Project → drag this entire folder → Deploy
-
-# Option B — GitHub (auto-deploys on every update)
-# 1. Create repo on github.com/Manav0226
-# 2. Upload all files in this folder
-# 3. Connect repo to Vercel → Deploy
-# Every push to GitHub auto-redeploys in ~30 seconds
+Backend          Python · Node.js · REST APIs · PostgreSQL · MongoDB
+Frontend         React · HTML5/CSS3 · JavaScript ES6+
+AI / Agents      Claude API · LangGraph · MCP · Vector stores · RAG
+Blockchain       Solidity · Smart contracts · MetaMask · Truffle
+Security         Penetration testing · Secure software engineering
+Cloud            AWS EC2/S3/Lambda · Docker · Azure · Vercel
 ```
 
 ---
 
-## Your tracking links (update domain once live)
+## About Me
 
-Use these when sharing your portfolio. Analytics dashboard shows which source sends the most visitors.
+- **Degree:** Master of IT (Professional) — Deakin University, Melbourne (2023–2025)
+- **Visa:** Graduate 485 — full work rights, no sponsorship required
+- **Status:** Actively seeking graduate software engineering roles in Melbourne
+- **Interests:** Formula 1 (Ferrari), space exploration, Iron Man / Marvel, markets & trading
 
-| Where | Link |
-|-------|------|
-| LinkedIn bio | `YOUR_DOMAIN?utm_source=linkedin&utm_medium=profile&utm_campaign=bio` |
-| LinkedIn post | `YOUR_DOMAIN?utm_source=linkedin&utm_medium=post&utm_campaign=job-search` |
-| Resume PDF | `YOUR_DOMAIN?utm_source=resume&utm_medium=pdf&utm_campaign=applications` |
-| WhatsApp | `YOUR_DOMAIN?utm_source=whatsapp&utm_medium=share&utm_campaign=networking` |
-| Email sign-off | `YOUR_DOMAIN?utm_source=email&utm_medium=signature&utm_campaign=outreach` |
+I work part-time at Coles while finishing study. That means I'm disciplined, I manage my time, and I know how to show up consistently.
 
 ---
 
-## Resume
+## Built With
 
-The `.docx` file is your master copy. To create a submission PDF:
-1. Open `manav-mehta-resume.docx` in Microsoft Word
-2. File → Save As → PDF
-3. Submit the PDF — never the .docx (formatting can shift in different Word versions)
+| Technology | Purpose |
+|------------|---------|
+| Vanilla HTML/CSS/JS | Single-file, zero build step, fast load |
+| GSAP + ScrollTrigger | Scroll-driven animations |
+| Three.js | Hero scene rendering |
+| Lenis | Smooth scroll (desktop only) |
+| Vercel | Hosting + edge CDN |
+| Cloudflare Analytics | Privacy-respecting visitor tracking |
+| Formspree | Contact form backend |
+| PWA + Service Worker | Offline support and caching |
 
-Tailor keywords to each job description before submitting.
+---
+
+## Performance
+
+- **SEO:** 100 / 100 (Lighthouse mobile)
+- **Accessibility:** 96 / 100
+- **Best Practices:** 96 / 100
+- Mobile-first responsive · WCAG AA contrast · Reduced-motion support
+
+---
+
+## Contact
+
+**Email:** manavaus0226@gmail.com  
+**Portfolio:** [portfolio-dev-phi-tawny.vercel.app](https://portfolio-dev-phi-tawny.vercel.app)
+
+Open to graduate roles, internships, and conversations about interesting problems.
+
+---
+
+<div align="center">
+
+*Secure systems. Calm execution. Built to be remembered.*
+
+</div>
