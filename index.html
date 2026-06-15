@@ -176,7 +176,7 @@ body.custom-cursor .ahp-close{cursor:none}
 @keyframes marquee-scroll-rev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 .marquee-track--rev{animation-name:marquee-scroll-rev;animation-duration:36s}
 .marquee-strip--dark{background:var(--ink);border-color:rgba(242,237,227,.06)}
-.marquee-strip--dark .mq-item{color:rgba(242,237,227,.38)}
+.marquee-strip--dark .mq-item{color:rgba(242,237,227,.55)}
 .marquee-strip--dark .mq-dot{color:var(--accent);opacity:.6}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
 
@@ -1695,7 +1695,8 @@ body.menu-open .nav-mobile-panel{display:flex}
   body{cursor:auto}
   #c-dot,#c-ring{display:none}
 
-  #hero{grid-template-columns:1fr;min-height:auto;padding-top:56px}
+  #hero{min-height:auto}
+  .hero-inner{grid-template-columns:1fr;height:auto;padding-top:56px}
   .h-left{padding:50px 28px 42px;border-right:none;border-bottom:1px solid var(--rule)}
   .h-right{height:420px}
   .scene-frame{inset:10% 8% 14%}
@@ -4471,7 +4472,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   // Lenis smooth scroll
   const scrollProgressFill=document.getElementById('scroll-progress-fill');
-  if(!prefersReducedMotion){
+  if(!prefersReducedMotion && supportsFinePointer){
     const lenis=new Lenis({lerp:.06,duration:1.85,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
     lenis.on('scroll',e=>{
       ScrollTrigger.update();
@@ -5564,7 +5565,7 @@ document.addEventListener('keydown',e=>{
 
 
 <!-- Recruiter mode FAB — visible on all screen sizes (mobile/tablet/desktop) -->
-<button id="rm-fab" onclick="toggleRecruiterMode()" aria-label="Toggle recruiter speed mode">⚡ Recruiter View</button>
+<button id="rm-fab" onclick="toggleRecruiterMode()" aria-label="Recruiter View">⚡ Recruiter View</button>
 
 <!-- ██ RECRUITER SPEED MODE OVERLAY ██ -->
 <div id="recruiter-overlay" role="dialog" aria-label="Recruiter Speed Mode" aria-hidden="true">
