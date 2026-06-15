@@ -4564,6 +4564,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(heroDocked||introState==='docking'||introState==='static')return;
     if(!introStage||!introShell||!heroScene){finalizeHeroIntro(true);return;}
     if(introAutoDockTimer){clearTimeout(introAutoDockTimer);introAutoDockTimer=null;}
+    // On mobile (no fine pointer) .h-right is below fold — skip dock animation, just fade out
+    if(!supportsFinePointer){
+      setIntroState('docking');
+      gsap.to(introStage,{opacity:0,duration:.55,ease:'power2.out',onComplete:()=>finalizeHeroIntro(true)});
+      return;
+    }
     setIntroState('docking');
     const heroRect=heroScene.getBoundingClientRect();
     introStage.classList.add('is-docking');
