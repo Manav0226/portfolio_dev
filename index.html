@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Security: CSP, no referrer leak, no index for dev -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://upload.wikimedia.org; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com https://*.workers.dev https://formspree.io; script-src-attr 'unsafe-inline'; upgrade-insecure-requests;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://static.cloudflareinsights.com https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://upload.wikimedia.org; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com https://*.workers.dev https://formspree.io https://www.clarity.ms https://vitals.vercel-insights.com; script-src-attr 'unsafe-inline'; upgrade-insecure-requests;">
 <meta name="referrer" content="no-referrer">
 <meta name="mm-visits-endpoint" content="https://portfolio-visits.manav-mehta.workers.dev/visits">
 <title>Manav Mehta — Melbourne</title>
@@ -2373,6 +2373,20 @@ body.menu-open .nav-mobile-panel{display:flex}
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cadd0aa369c049ff8130d727939196ca"}'></script>
 <!-- End Cloudflare Web Analytics -->
+
+<!-- Vercel Analytics -->
+<script defer src="/_vercel/insights/script.js"></script>
+<!-- End Vercel Analytics -->
+
+<!-- Microsoft Clarity — replace CLARITY_PROJECT_ID with ID from clarity.microsoft.com -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","xb8jsos3w1");
+</script>
+<!-- End Microsoft Clarity -->
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Manav Jayesh Mehta","jobTitle":"Graduate Software Developer","url":"https://manav-mehta.vercel.app","email":"manavmehta0226@gmail.com","alumniOf":"Deakin University","address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressCountry":"AU"},"sameAs":["https://github.com/Manav0226","https://linkedin.com/in/manav-mehta-0226"]}</script>
 </head>
