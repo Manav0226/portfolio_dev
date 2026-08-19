@@ -1,4 +1,4 @@
-const CACHE = 'manav-portfolio-v7';
+const CACHE = 'manav-portfolio-v8';
 
 const PRECACHE = [
   '/',
@@ -19,6 +19,9 @@ const PRECACHE = [
   '/assets/hero-02.webp',
   '/assets/hero-03.webp',
   '/assets/hero-04.webp',
+  '/assets/vendor/gsap.min.js',
+  '/assets/vendor/ScrollTrigger.min.js',
+  '/assets/vendor/lenis.min.js',
 ];
 
 // Install — precache local assets
@@ -48,7 +51,7 @@ self.addEventListener('fetch', e => {
   // Skip Google Fonts — let browser handle natively to avoid CSP connect-src conflicts
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') return;
 
-  // External CDN (GSAP, analytics) — not cached, let browser handle natively
+  // Remaining external requests (analytics, Clarity) — not cached, let browser handle natively
   if (url.origin !== self.location.origin) return;
 
   // Same-origin — cache first, fall back to network then cache it
