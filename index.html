@@ -1240,12 +1240,6 @@ section[id]:not(#hero).is-inview::after{
 .f1-divider.is-active::after{opacity:.88;transform:scaleX(1)}
 .f1-divider.is-active .f1-divider-label{transform:translateX(10px);letter-spacing:.46em;color:rgba(255,232,193,.9)}
 
-/* ━━━━━━━━ ABOUT ━━━━━━━━ */
-#about{display:grid;grid-template-columns:300px 1fr;border-top:1px solid var(--rule)}
-.a-side{padding:68px 44px;border-right:1px solid var(--rule);position:sticky;top:56px;height:fit-content}
-.a-main{padding:68px 60px}
-.a-main p{font-family:var(--f-s);font-size:17px;line-height:1.76;color:var(--ink);max-width:580px;margin-bottom:20px}
-.a-main p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:.78;margin-right:8px;margin-top:5px;color:var(--accent);font-family:var(--f-s)}
 .a-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:26px}
 .achip{font-family:var(--f-m);font-size:8px;letter-spacing:.12em;padding:3px 9px;border:1px solid var(--rule);color:var(--muted);text-transform:uppercase;transition:all .2s;cursor:pointer}
 .achip:hover,.achip.hl{border-color:var(--accent);color:var(--accent)}
@@ -2234,8 +2228,7 @@ body.menu-open .nav-mobile-panel{display:flex}
 
 /* ━━━━━━━━ ABOUT ━━━━━━━━ */
 #about{display:grid;grid-template-columns:300px 1fr;border-top:1px solid var(--rule)}
-.a-side{padding:68px 44px;border-right:1px solid var(--rule);position:sticky;top:56px;height:fit-content}
-.a-side{overflow:clip}
+.a-side{padding:68px 44px;border-right:1px solid var(--rule);position:sticky;top:56px;height:fit-content;overflow:clip}
 .a-right{position:relative;overflow:hidden;min-height:520px}
 .a-bio{padding:68px 60px;transition:opacity .5s ease,filter .5s ease,transform .5s ease}
 .a-bio.dimmed{opacity:.04;filter:blur(3px);transform:translateX(-12px);pointer-events:none}
