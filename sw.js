@@ -1,4 +1,4 @@
-const CACHE = 'manav-portfolio-v3';
+const CACHE = 'manav-portfolio-v6';
 
 const PRECACHE = [
   '/',
