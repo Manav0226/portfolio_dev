@@ -1,4 +1,4 @@
-const CACHE = 'manav-portfolio-v6';
+const CACHE = 'manav-portfolio-v7';
 
 const PRECACHE = [
   '/',
@@ -48,11 +48,8 @@ self.addEventListener('fetch', e => {
   // Skip Google Fonts — let browser handle natively to avoid CSP connect-src conflicts
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') return;
 
-  // External CDN (GSAP, analytics) — network first, no caching
-  if (url.origin !== self.location.origin) {
-    e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
-    return;
-  }
+  // External CDN (GSAP, analytics) — not cached, let browser handle natively
+  if (url.origin !== self.location.origin) return;
 
   // Same-origin — cache first, fall back to network then cache it
   e.respondWith(
