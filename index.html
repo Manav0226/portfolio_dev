@@ -5180,6 +5180,12 @@ document.addEventListener('DOMContentLoaded',()=>{
       onLeaveBack:els=>gsap.set(els,{scale:.85,opacity:0}),
     });
   }
+
+  // Web fonts / late-loading images shift layout after ScrollTrigger's initial
+  // measurements, leaving .reveal/batch elements stuck at opacity:0. Re-measure once
+  // everything settles so their trigger positions match the final layout.
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>ScrollTrigger.refresh());
+  window.addEventListener('load',()=>ScrollTrigger.refresh());
 });
 </script>
 <script>
